@@ -4,4 +4,4 @@ easyocr
 # json
 # re
 tensorflow
-pickle
+# pickle
