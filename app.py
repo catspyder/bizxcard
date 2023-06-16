@@ -129,8 +129,7 @@ class Card:
             company_name=match[-1]
             self.card['company_name'] = company_name
         
-    def title_finder(self):
-        
+    def title_finder(self):    
 
         model = load_model('model.h5')
 

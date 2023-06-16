@@ -1,0 +1,7 @@
+streamlit
+numpy
+easyocr
+json
+re
+tensorflow
+pickle
