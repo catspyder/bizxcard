@@ -7,6 +7,8 @@ import easyocr as ocr
 import json
 import re
 from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
 from tensorflow.keras.models import load_model
 import pickle
 
@@ -145,10 +147,10 @@ class Card:
         mx=0
         j=-1
         # program to find the max position
-        for i in range(len(t)):
-        if predictions[i]>mx:
-            j=i
-            mx=predictions[i]
+        for i in range(len(self.dynamic)):
+            if predictions[i]>mx:
+                j=i
+                mx=predictions[i]
 
         self.card['title']=self.dynamic[j]
 
