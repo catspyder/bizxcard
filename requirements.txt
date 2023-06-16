@@ -2,6 +2,6 @@ streamlit
 numpy
 easyocr
 # json
-re
+# re
 tensorflow
 pickle
