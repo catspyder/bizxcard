@@ -5,3 +5,6 @@ easyocr
 # re
 tensorflow
 # pickle
+sqlalchemy
+pandas
+psycopg2
